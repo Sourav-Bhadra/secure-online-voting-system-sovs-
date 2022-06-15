@@ -91,7 +91,7 @@ public class VoteSmartContract {
 
     
     public String voteCount() throws NoSuchAlgorithmException{
-
+        correctTableValues();
         Sort sort = Sort.by(Sort.Direction.ASC, "date");
         List<Votedata> votes = vrepo.findAll(sort);
         // String[] party={"cpm","bjp","aap","tmc"};
